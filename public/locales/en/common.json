@@ -1,0 +1,11 @@
+{
+  "name": "TimeCalc",
+  "author": "Jakob Lierman",
+  "copyright": "Copyright",
+  "seo": {
+    "titleTemplate": "%s | TimeCalc",
+    "defaultTitle": "TimeCalc - Delay Time Programs",
+    "description": "",
+    "keywords": ""
+  }
+}
