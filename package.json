@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install"
@@ -52,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "lint-staged": "latest",
+    "next-sitemap": "^1.6.203",
     "prettier": "^2.5.1",
     "stylelint": "^14.2.0",
     "stylelint-config-recommended": "^6.0.0",
