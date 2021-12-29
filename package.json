@@ -30,14 +30,17 @@
     "next-i18next": "^10.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.7",
     "@types/node": "^16.11.14",
     "@types/react": "17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.19",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
+    "babel-plugin-styled-components": "^2.0.2",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^12.0.7",
