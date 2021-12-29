@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "paths": { "@/*": ["./src/*"] },
+    "paths": { "@/*": ["./src/*"], "@public/*": ["./public/*"] },
     "incremental": true
   },
   "include": ["**/*.d.ts", "**/*.ts", "**/*.tsx"],
