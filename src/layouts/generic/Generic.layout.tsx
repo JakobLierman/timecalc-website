@@ -6,6 +6,7 @@ import { NextSeo } from 'next-seo';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 import SEO from '@/constants/next-seo.config';
 import { TLayoutProps } from '@/layouts/layout.types';
+import Footer from '@/components/footer/Footer.component';
 import SeoUtils from '@/utils/seo.utils';
 import Styled from './Generic.styled';
 
@@ -75,6 +76,7 @@ const GenericLayout: FC<TProps> = ({
 				openGraph={openGraph}
 			/>
 			<Styled.Content className={className}>{children}</Styled.Content>
+			<Footer />
 		</>
 	);
 };
