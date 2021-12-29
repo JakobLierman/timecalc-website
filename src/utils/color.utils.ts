@@ -5,7 +5,7 @@ export default class ColorUtils {
 	 * @param hexColorValue
 	 */
 	private static isValidHexColor = (hexColorValue: string): boolean => {
-		const hexColorRegex = new RegExp('^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$');
+		const hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
 
 		return hexColorRegex.test(hexColorValue);
 	};
