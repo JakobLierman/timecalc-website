@@ -1,15 +1,31 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+	html {
+		background-color: ${({ theme }) => theme.colors.dark};
+	}
+
+	body {
+		background-color: ${({ theme }) => theme.colors.light};
+	}
+
 	html, body {
 		margin: 0;
 		padding: 0;
-		background-color: ${({ theme }) => theme.colors.light};
+		color: ${({ theme }) => theme.colors.dark};
+		font-family: ${({ theme }) => theme.fonts.default};
+		white-space: pre-line;
 	}
 
 	* {
 		box-sizing: border-box;
-		font-family: ${({ theme }) => theme.fonts.default};
+		vertical-align: baseline;
+		font-weight: inherit;
+		font-family: inherit;
+		border: 0 none;
+		outline: 0;
+		padding: 0;
+		margin: 0;
 	}
 
 	a {
@@ -20,13 +36,6 @@ const GlobalStyle = createGlobalStyle`
 		:hover {
 			opacity: .7;
 		}
-	}
-
-	p {
-		margin: 0;
-	}
-
-	::selection {
 	}
 `;
 

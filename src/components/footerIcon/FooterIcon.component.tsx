@@ -11,7 +11,7 @@ type TProps = TComponentProps & {
 };
 
 const FooterIcon: FC<TProps> = ({ href, iconComponent: Icon, className }) => (
-	<Link href={href} passHref>
+	<Link href={href} passHref={true}>
 		<Styled.IconLink className={className}>
 			<Icon size={25} />
 		</Styled.IconLink>

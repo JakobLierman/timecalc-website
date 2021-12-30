@@ -2,10 +2,21 @@ import styled from 'styled-components';
 import { device } from '@/styles/screenSize';
 
 const Container = styled.div`
+	display: flex;
+	justify-content: center;
+
+	> * {
+		flex-grow: 1;
+	}
+
 	background-color: ${({ theme }) => theme.colors.dark};
 	padding: ${({ theme }) => theme.margins.huge}px ${({ theme }) => theme.margins.large}px;
 
 	@media (${device.tablet}) {
+		padding: ${({ theme }) => theme.margins.huge}px;
+	}
+
+	@media (${device.laptop}) {
 		padding: ${({ theme }) => theme.margins.huge}px ${({ theme }) => 4 * theme.margins.large}px;
 	}
 `;
