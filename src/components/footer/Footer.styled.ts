@@ -32,14 +32,6 @@ const Content = styled.div`
 const FirstSection = styled.div`
 	margin-bottom: ${({ theme }) => theme.margins.huge / 2}px;
 
-	> * {
-		margin-bottom: ${({ theme }) => theme.margins.normal}px;
-
-		:last-child {
-			margin-bottom: unset;
-		}
-	}
-
 	@media (${device.tablet}) {
 		margin-bottom: 0;
 		margin-right: ${({ theme }) => theme.margins.huge / 2}px;
@@ -58,10 +50,17 @@ const LastSection = styled.div`
 const Title = styled.p`
 	font-size: ${({ theme }) => theme.fonts.sizes.large}px;
 	font-weight: ${({ theme }) => theme.fonts.weights.bold};
+	margin: 0 0 ${({ theme }) => theme.margins.normal}px;
+`;
+
+const Subtitle = styled.p`
+	font-size: ${({ theme }) => theme.fonts.sizes.normal}px;
+	margin: 0 0 ${({ theme }) => theme.margins.large}px;
 `;
 
 const SmallText = styled.p`
 	font-size: ${({ theme }) => theme.fonts.sizes.small}px;
+	margin: 0;
 
 	@media (${device.tablet}) {
 		text-align: right;
@@ -74,4 +73,4 @@ const Icons = styled.div`
 	}
 `;
 
-export default { Container, Content, FirstSection, LastSection, Title, SmallText, Icons };
+export default { Container, Content, FirstSection, LastSection, Title, Subtitle, SmallText, Icons };

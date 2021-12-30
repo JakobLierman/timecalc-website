@@ -20,12 +20,7 @@ const GlobalStyle = createGlobalStyle`
 	* {
 		box-sizing: border-box;
 		vertical-align: baseline;
-		font-weight: inherit;
 		font-family: inherit;
-		border: 0 none;
-		outline: 0;
-		padding: 0;
-		margin: 0;
 	}
 
 	a {

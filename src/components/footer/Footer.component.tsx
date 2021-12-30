@@ -18,7 +18,7 @@ const Footer: FC<TProps> = ({ className }) => {
 			<Styled.Content>
 				<Styled.FirstSection>
 					<Styled.Title>{t('name')}</Styled.Title>
-					<p>{t('author')}</p>
+					<Styled.Subtitle>{t('author')}</Styled.Subtitle>
 					<Styled.Icons>
 						{iconValues.map(({ name, href, component }) => (
 							<FooterIcon key={name} href={href} iconComponent={component} />
