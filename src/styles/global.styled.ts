@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	a {
+		cursor: pointer;
 		color: inherit;
 		text-decoration: inherit;
 		transition: opacity ${({ theme }) => theme.animations.transitionDuration}ms ease-in-out;
