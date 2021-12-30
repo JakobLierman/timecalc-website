@@ -1,18 +1,30 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+	html {
+		background-color: ${({ theme }) => theme.colors.dark};
+	}
+
+	body {
+		background-color: ${({ theme }) => theme.colors.light};
+	}
+
 	html, body {
 		margin: 0;
 		padding: 0;
-		background-color: ${({ theme }) => theme.colors.light};
+		color: ${({ theme }) => theme.colors.dark};
+		font-family: ${({ theme }) => theme.fonts.default};
+		white-space: pre-line;
 	}
 
 	* {
 		box-sizing: border-box;
-		font-family: ${({ theme }) => theme.fonts.default};
+		vertical-align: baseline;
+		font-family: inherit;
 	}
 
 	a {
+		cursor: pointer;
 		color: inherit;
 		text-decoration: inherit;
 		transition: opacity ${({ theme }) => theme.animations.transitionDuration}ms ease-in-out;
@@ -20,13 +32,6 @@ const GlobalStyle = createGlobalStyle`
 		:hover {
 			opacity: .7;
 		}
-	}
-
-	p {
-		margin: 0;
-	}
-
-	::selection {
 	}
 `;
 

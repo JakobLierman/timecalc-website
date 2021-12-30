@@ -7,5 +7,7 @@
     "defaultTitle": "TimeCalc - Delay Time Programs",
     "description": "",
     "keywords": ""
-  }
+  },
+  "goBack": "Go Back",
+  "goHome": "Go Home"
 }

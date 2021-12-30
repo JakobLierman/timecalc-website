@@ -75,8 +75,10 @@ const GenericLayout: FC<TProps> = ({
 				additionalMetaTags={metaTags}
 				openGraph={openGraph}
 			/>
-			<Styled.Content className={className}>{children}</Styled.Content>
-			<Footer />
+			<Styled.Container className={className}>
+				<Styled.Content>{children}</Styled.Content>
+				<Footer />
+			</Styled.Container>
 		</>
 	);
 };
