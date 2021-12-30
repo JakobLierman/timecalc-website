@@ -12,7 +12,7 @@ type TProps = TComponentProps & {
 
 const StoreBadge: FC<TProps> = ({ imageSrc, url, className }) => (
 	<Link href={url} passHref={true}>
-		<Styled.Anchor>
+		<Styled.Anchor className={className}>
 			<Image src={imageSrc} />
 		</Styled.Anchor>
 	</Link>
