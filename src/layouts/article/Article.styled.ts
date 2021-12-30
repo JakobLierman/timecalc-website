@@ -12,14 +12,14 @@ const Container = styled.div`
 	flex-direction: column;
 	max-width: ${({ theme }) => theme.maxWidth}px;
 	color: ${({ theme }) => theme.colors.light};
-	padding: ${({ theme }) => theme.margins.huge}px ${({ theme }) => theme.margins.large}px;
+	margin: ${({ theme }) => theme.margins.huge}px ${({ theme }) => theme.margins.large}px;
 
 	@media (${device.tablet}) {
-		padding: ${({ theme }) => theme.margins.huge}px;
+		margin: ${({ theme }) => theme.margins.huge}px;
 	}
 
 	@media (${device.laptop}) {
-		padding: ${({ theme }) => theme.margins.huge}px ${({ theme }) => 4 * theme.margins.large}px;
+		margin: ${({ theme }) => theme.margins.huge}px ${({ theme }) => 4 * theme.margins.large}px;
 	}
 `;
 
