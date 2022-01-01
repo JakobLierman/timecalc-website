@@ -2,7 +2,7 @@ import { MetaTag } from 'next-seo/lib/types';
 
 export default class SeoUtils {
 	/**
-	 * Whether or not meta tags are equal
+	 * Whether meta tags are equal
 	 *
 	 * @param firstTag
 	 * @param secondTag

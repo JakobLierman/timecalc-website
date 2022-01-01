@@ -1,6 +1,6 @@
 export default class EnvironmentUtils {
 	/**
-	 * Whether or not this is a production instance
+	 * Whether this is a production instance
 	 */
 	public static isProduction = (): boolean => {
 		const envVars: (string | undefined)[] = [

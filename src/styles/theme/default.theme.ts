@@ -6,7 +6,7 @@ export const defaultTheme: DefaultTheme = {
 		white: '#FFFFFF',
 		black: '#000000',
 		primary: '#D7263D',
-		light: '#E5E5E5',
+		light: '#FAFAFA',
 		dark: '#020122',
 	},
 	margins: {

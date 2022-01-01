@@ -1,6 +1,6 @@
 export default class ColorUtils {
 	/**
-	 * Checks whether or not the hex color value has a valid format
+	 * Checks whether the hex color value has a valid format
 	 *
 	 * @param hexColorValue
 	 */
