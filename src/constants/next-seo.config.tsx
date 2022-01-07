@@ -34,6 +34,7 @@ const SEO = (t: TFunction, router: NextRouter): DefaultSeoProps => {
 					width: 1024,
 					height: 500,
 					alt: t('seo.defaultTitle'),
+					type: 'image/webp',
 				},
 			],
 			locale: router.locale,
