@@ -1,7 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { SSRConfig, useTranslation } from 'next-i18next';
-import mockupHand from '@public/images/mockup-hand.webp';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 import Styled from '@/styles/pages/index.styled';
 import storeInfo, { EStoreType } from '@/constants/storeInfo.constant';
@@ -15,15 +14,19 @@ const Home: NextPage<TProps> = () => {
 	return (
 		<Styled.Layout>
 			<Styled.Container>
-				<Styled.ImageWrap inline={false}>
-					<Styled.Image src={mockupHand} alt={t(`${EI18nNamespace.Home}:imageAlt`)} />
-				</Styled.ImageWrap>
+				<Styled.Image
+					src="/images/mockup-hand.webp"
+					alt={t(`${EI18nNamespace.Home}:imageAlt`)}
+					inline={false}
+				/>
 				<Styled.Content>
 					<Styled.Title>{t(`${EI18nNamespace.Common}:name`)}</Styled.Title>
 					<Styled.Subtitle>{t(`${EI18nNamespace.Home}:subtitle`)}</Styled.Subtitle>
-					<Styled.ImageWrap inline={true}>
-						<Styled.Image src={mockupHand} alt={t(`${EI18nNamespace.Home}:imageAlt`)} />
-					</Styled.ImageWrap>
+					<Styled.Image
+						src="/images/mockup-hand.webp"
+						alt={t(`${EI18nNamespace.Home}:imageAlt`)}
+						inline={true}
+					/>
 					<Styled.Text inline={true}>{t(`${EI18nNamespace.Home}:description`)}</Styled.Text>
 					<Styled.Badges>
 						{Object.keys(storeInfo).map((storeType) => (
