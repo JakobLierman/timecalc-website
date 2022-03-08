@@ -4,7 +4,7 @@ export interface LanguageAlternate {
 }
 
 export default class RouterUtils {
-	private static url = process.env.NEXT_PUBLIC_PUBLIC_URL || 'https://timcalc.jakoblierman.be';
+	private static url = process.env.NEXT_PUBLIC_PUBLIC_URL || 'https://timecalc.jakoblierman.be';
 
 	/**
 	 * Gets full route with deploy host

@@ -2,11 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 	html {
+		scroll-behavior: smooth;
 		background-color: ${({ theme }) => theme.colors.dark};
 	}
 
 	body {
 		background-color: ${({ theme }) => theme.colors.light};
+	}
+
+	#__next {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		overflow-x: hidden;
 	}
 
 	html, body {

@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import { UrlObject } from 'url';
 import { IconType } from 'react-icons';
-import Styled from './FooterIcon.styled';
 import { TComponentProps } from '@/components/component.types';
+import Styled from './FooterIcon.styled';
 
 type TProps = TComponentProps & {
 	href: string | UrlObject;

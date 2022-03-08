@@ -7,8 +7,8 @@ import { BiLinkExternal } from 'react-icons/bi';
 import { TComponentProps } from '@/components/component.types';
 import FooterIcon from '@/components/footerIcon/FooterIcon.component';
 import iconValues, { TFooterIcon } from '@/constants/footerIcons.constant';
-import Styled from './Footer.styled';
 import linkValues, { TFooterLink } from '@/constants/footerLinks.constant';
+import Styled from './Footer.styled';
 
 type TProps = TComponentProps;
 
