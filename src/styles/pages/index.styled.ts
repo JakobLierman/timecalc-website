@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ImageComponent from '@/components/image/Image.component';
 import GenericLayout from '@/layouts/generic/Generic.layout';
 import { device } from '@/styles/screenSize';
 import Typography from '@/styles/typography.styled';
@@ -32,10 +31,10 @@ const Content = styled.div`
 	color: ${({ theme }) => theme.colors.light};
 	padding: ${({ theme }) => theme.margins.huge}px ${({ theme }) => theme.margins.large}px;
 	background-color: ${({ theme }) => theme.colors.primary};
-	height: 100vh;
+	min-height: 100vh;
 
 	@media (${device.tablet}) {
-		height: unset;
+		min-height: unset;
 		background-color: inherit;
 		justify-content: center;
 		width: 50%;
@@ -70,26 +69,20 @@ const Text = styled(Typography.P)<{ inline: boolean }>`
 	}
 `;
 
-const ImageWrap = styled.div<{ inline: boolean }>`
+const Image = styled.img<{ inline: boolean }>`
 	display: ${({ inline }) => (inline ? 'flex' : 'none')};
-	max-height: 100vh;
-
-	@media (${device.tablet}) {
-		display: ${({ inline }) => (inline ? 'none' : 'flex')};
-		width: 50%;
-	}
-`;
-
-const Image = styled(ImageComponent).attrs(() => ({
-	placeholder: 'blur',
-	quality: 100,
-	priority: true,
-	layout: 'responsive',
-}))`
+	flex: 1;
+	max-width: 100%;
 	flex-direction: column;
 	padding: ${({ theme }) => theme.margins.large}px;
-	margin: auto 0;
-	flex-grow: 1;
+	object-fit: contain;
+
+	@media (${device.tablet}) {
+		display: ${({ inline }) => (inline ? 'none' : 'block')};
+		width: 50%;
+		margin: auto 0;
+		max-height: 70vh;
+	}
 `;
 
 const Badges = styled.div`
@@ -113,4 +106,4 @@ const Badges = styled.div`
 	}
 `;
 
-export default { Layout, Container, Content, Title, Subtitle, Text, ImageWrap, Image, Badges };
+export default { Layout, Container, Content, Title, Subtitle, Text, Image, Badges };
