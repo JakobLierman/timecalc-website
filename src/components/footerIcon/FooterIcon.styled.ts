@@ -5,4 +5,6 @@ const IconLink = styled.a.attrs(() => ({
 	target: '_blank',
 }))``;
 
-export default { IconLink };
+export default {
+	IconLink,
+};

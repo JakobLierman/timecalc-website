@@ -1,4 +1,4 @@
-import { UrlObject } from 'url';
+import { type UrlObject } from 'url';
 import appStoreBadge from '@public/vectors/app-store-badge.svg';
 import playStoreBadge from '@public/vectors/play-store-badge.svg';
 

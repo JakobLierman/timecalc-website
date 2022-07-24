@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { AppProps } from 'next/app';
+import { type FC } from 'react';
+import { type AppProps } from 'next/app';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import { ThemeProvider } from 'styled-components';
 import { DefaultSeo } from 'next-seo';
@@ -25,4 +25,4 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
 	);
 };
 
-export default appWithTranslation(App);
+export default appWithTranslation<AppProps>(App);

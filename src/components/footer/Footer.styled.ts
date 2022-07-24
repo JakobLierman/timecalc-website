@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '@/styles/screenSize';
 
-const Container = styled.div`
+const Container = styled.footer`
 	display: flex;
 	justify-content: center;
 

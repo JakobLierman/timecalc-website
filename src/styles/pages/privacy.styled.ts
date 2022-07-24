@@ -9,4 +9,6 @@ const Subtitle = styled(Typography.P)`
 	margin-bottom: ${({ theme }) => theme.margins.huge}px;
 `;
 
-export default { Subtitle };
+export default {
+	Subtitle,
+};

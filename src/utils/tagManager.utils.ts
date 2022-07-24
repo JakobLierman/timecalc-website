@@ -1,4 +1,4 @@
-import { TagManagerArgs } from 'react-gtm-module';
+import { type TagManagerArgs } from 'react-gtm-module';
 
 export enum EEventName {
 	PreferencesChanged = 'preferences_changed',

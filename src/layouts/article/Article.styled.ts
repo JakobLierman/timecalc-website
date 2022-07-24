@@ -33,4 +33,8 @@ const HomeButton = styled(BackButton).attrs(() => ({
 	}
 `;
 
-export default { Layout, Container, HomeButton };
+export default {
+	Layout,
+	Container,
+	HomeButton,
+};

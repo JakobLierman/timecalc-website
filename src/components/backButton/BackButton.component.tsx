@@ -1,12 +1,13 @@
-import { FC } from 'react';
+import { type ComponentProps, type FC } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 import Link from 'next/link';
-import { TComponentProps } from '@/components/component.types';
 import Styled from './BackButton.styled';
 
-type TProps = TComponentProps & { goHome?: boolean };
+type TProps = Pick<ComponentProps<'button'>, 'className' | 'children'> & {
+	goHome?: boolean;
+};
 
 const BackButton: FC<TProps> = ({ goHome = false, className, children }) => {
 	const { t } = useTranslation(EI18nNamespace.Common);
