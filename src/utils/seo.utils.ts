@@ -1,4 +1,4 @@
-import { MetaTag } from 'next-seo/lib/types';
+import { type MetaTag } from 'next-seo/lib/types';
 
 export default class SeoUtils {
 	/**

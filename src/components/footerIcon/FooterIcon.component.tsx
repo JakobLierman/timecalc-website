@@ -1,14 +1,14 @@
-import React, { FC } from 'react';
-import Link from 'next/link';
-import { UrlObject } from 'url';
-import { IconType } from 'react-icons';
-import { TComponentProps } from '@/components/component.types';
+import { type ComponentProps, type FC } from 'react';
+import Link, { type LinkProps } from 'next/link';
+import { type UrlObject } from 'url';
+import { type IconType } from 'react-icons';
 import Styled from './FooterIcon.styled';
 
-type TProps = TComponentProps & {
-	href: string | UrlObject;
-	iconComponent: IconType;
-};
+type TProps = Omit<LinkProps, 'href'> &
+	Pick<ComponentProps<'div'>, 'className'> & {
+		href: string | UrlObject;
+		iconComponent: IconType;
+	};
 
 const FooterIcon: FC<TProps> = ({ href, iconComponent: Icon, className }) => (
 	<Link href={href} passHref={true}>

@@ -1,10 +1,10 @@
-import type { GetStaticProps, NextPage } from 'next';
+import { type GetStaticProps, type NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { SSRConfig, useTranslation } from 'next-i18next';
+import { type SSRConfig, useTranslation } from 'next-i18next';
 import { EI18nNamespace } from '@public/locales/i18n.type';
-import Styled from '@/styles/pages/index.styled';
 import storeInfo, { EStoreType } from '@/constants/storeInfo.constant';
 import StoreBadge from '@/components/storeBadge/StoreBadge.component';
+import Styled from '@/styles/pages/index.styled';
 
 type TProps = SSRConfig;
 

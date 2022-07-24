@@ -1,9 +1,8 @@
-import React, { FC, useEffect } from 'react';
+import { type ComponentProps, type FC, useEffect } from 'react';
 import GoogleTagManager from 'react-gtm-module';
-import { TComponentProps } from '@/components/component.types';
 import TagManagerUtils from '@/utils/tagManager.utils';
 
-type TProps = TComponentProps;
+type TProps = Pick<ComponentProps<'div'>, 'children'>;
 
 const TagManager: FC<TProps> = ({ children }) => {
 	useEffect(() => {

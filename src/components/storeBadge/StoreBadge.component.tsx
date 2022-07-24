@@ -1,11 +1,11 @@
-import { FC } from 'react';
-import { UrlObject } from 'url';
+import { type ComponentProps, type FC } from 'react';
+import { type UrlObject } from 'url';
 import Link from 'next/link';
-import { TComponentProps } from '@/components/component.types';
+import { type StaticImageData } from 'next/image';
 import Image from '@/components/image/Image.component';
 import Styled from './StoreBadge.styled';
 
-type TProps = TComponentProps & {
+type TProps = Pick<ComponentProps<'a'>, 'className'> & {
 	imageSrc: StaticImageData;
 	url: string | UrlObject;
 };

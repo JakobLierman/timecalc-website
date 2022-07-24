@@ -1,8 +1,8 @@
-import type { GetStaticProps, NextPage } from 'next';
+import { type GetStaticProps, type NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { SSRConfig, useTranslation } from 'next-i18next';
+import { type SSRConfig, useTranslation } from 'next-i18next';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { TFuncKey } from 'react-i18next';
+import { type TFuncKey } from 'react-i18next';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 import ArticleLayout from '@/layouts/article/Article.layout';
 import Typography from '@/styles/typography.styled';
