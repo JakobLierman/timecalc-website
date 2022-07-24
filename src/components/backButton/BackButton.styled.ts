@@ -19,4 +19,7 @@ const Icon = styled(BsArrowLeft)`
 	margin-right: ${({ theme }) => theme.margins.normal}px;
 `;
 
-export default { ContainerAnchor, Icon };
+export default {
+	ContainerAnchor,
+	Icon,
+};

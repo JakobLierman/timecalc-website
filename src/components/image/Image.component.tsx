@@ -1,8 +1,7 @@
-import React, { FC } from 'react';
-import NextImage, { ImageProps } from 'next/image';
-import { TComponentProps } from '@/components/component.types';
+import { type ComponentProps, type FC } from 'react';
+import NextImage, { type ImageProps } from 'next/image';
 
-type TProps = TComponentProps & ImageProps;
+type TProps = ComponentProps<'div'> & ImageProps;
 
 const Image: FC<TProps> = ({ className, ...props }) => (
 	<div className={className}>

@@ -106,4 +106,13 @@ const Badges = styled.div`
 	}
 `;
 
-export default { Layout, Container, Content, Title, Subtitle, Text, Image, Badges };
+export default {
+	Layout,
+	Container,
+	Content,
+	Title,
+	Subtitle,
+	Text,
+	Image,
+	Badges,
+};

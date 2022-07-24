@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { TLayoutProps } from '@/layouts/layout.types';
+import { type FC } from 'react';
+import { type TLayoutProps } from '@/layouts/layout.types';
 import Styled from './Article.styled';
 
 type TProps = TLayoutProps;

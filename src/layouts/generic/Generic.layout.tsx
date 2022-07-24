@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import { type FC } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import { MetaTag, OpenGraph } from 'next-seo/lib/types';
+import { type MetaTag, type OpenGraph } from 'next-seo/lib/types';
 import { NextSeo } from 'next-seo';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 import SEO from '@/constants/next-seo.config';
-import { TLayoutProps } from '@/layouts/layout.types';
+import { type TLayoutProps } from '@/layouts/layout.types';
 import Footer from '@/components/footer/Footer.component';
 import SeoUtils from '@/utils/seo.utils';
 import Styled from './Generic.styled';

@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { UrlObject } from 'url';
-import { IconType } from 'react-icons';
+import { type UrlObject } from 'url';
+import { type IconType } from 'react-icons';
 
 export type TFooterIcon = {
 	name: string;

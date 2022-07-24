@@ -1,6 +1,6 @@
-import { DefaultSeoProps } from 'next-seo';
-import { NextRouter } from 'next/router';
-import { TFunction } from 'next-i18next';
+import { type DefaultSeoProps } from 'next-seo';
+import { type NextRouter } from 'next/router';
+import { type TFunction } from 'next-i18next';
 import RouterUtils from '../utils/router.utils';
 
 const SEO = (t: TFunction, router: NextRouter): DefaultSeoProps => {

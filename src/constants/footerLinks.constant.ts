@@ -1,6 +1,6 @@
-import { UrlObject } from 'url';
+import { type UrlObject } from 'url';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { TFuncKey } from 'react-i18next';
+import { type TFuncKey } from 'react-i18next';
 import { EI18nNamespace } from '@public/locales/i18n.type';
 
 export type TFooterLink = {

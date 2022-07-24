@@ -38,4 +38,11 @@ const LI = styled.li`
 	line-height: 1.5;
 `;
 
-export default { H1, H2, H3, H4, P, LI };
+export default {
+	H1,
+	H2,
+	H3,
+	H4,
+	P,
+	LI,
+};
